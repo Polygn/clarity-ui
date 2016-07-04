@@ -1,0 +1,56 @@
+.card
+    margin-top: 30px !important
+    margin-bottom: 30px !important
+
+
+.app__content-mdcard[card-shape="square"]
+    width: 550px
+
+    margin: 0 auto
+    @include BGColor(#fff)
+
+    &.shadow1
+        @include BoxShadow(1)
+
+.app__content-lgcard[card-shape="square"]
+    width: 900px
+    margin: 0 auto
+    @include BGColor(#fff)
+
+    &.shadow1
+        @include BoxShadow(1)
+
+
+.app__content-postuser
+    height: 45px
+    padding: 20px
+    padding-left: 30px
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12)
+
+    .ui
+        float: left
+
+        .app__user-img
+            @include BorderRadius(10em)
+            width: 45px
+            height: 45px
+
+    .app__user-nameplate
+        float: left
+        margin: 10px
+        font-size: 11pt
+        width: 87%
+
+    .app__core-postdate
+        float: right
+        font-size: 10pt
+        line-height: 1.7
+        color: #666
+
+.app__content-postcontent
+    padding: 30px
+
+
+.app__content-postheader
+    width: 100%
+    height: 300px
