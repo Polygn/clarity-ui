@@ -1,6 +1,6 @@
 .app-container
-    width: 960px
-    margin: 0 auto
+    width: 100%
+
 
 
 .pale
@@ -11,12 +11,14 @@
     width: 100%
     height: 350px
 
+
     .app__core-image
         width: 100%
 
         // This height is specific to this image for now. Going to work on a resizing plugin
-        height: 450px
-
+        height: 750px
+        filter: brightness(0.7)
+        -webkit-filter: brightness(0.7)
 
 .app__user-userimg
     float: left
@@ -41,6 +43,7 @@
         margin-top: 39px
         margin-left: 30px
         float: left
+        color: #fff
 
     .app__user-usertitle
         font-family: 'Open Sans', sans-serif
@@ -49,6 +52,7 @@
         margin-top: 47px
         margin-left: 80px
         float: left
+        color: #fff
 
 
 .app__core-contentstream
