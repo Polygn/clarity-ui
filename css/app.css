@@ -277,7 +277,8 @@ html, body {
   border-top-left-radius: 1.5px;
   border-top-right-radius: 1.5px; }
   .app__navscreen-navlink:hover {
-    background: rgba(255, 255, 255, 0.29); }
+    background: rgba(255, 255, 255, 0.73);
+    color: #222; }
 
 .app__navscreen-divider {
   display: block;
