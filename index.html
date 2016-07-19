@@ -4,11 +4,23 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,800|Roboto:300,400,500,600,700" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 </head>
 <body class="wait will-animate">
     <section class="app-container pale">
+        <div class="app__nav-container">
+            <div class="app__nav-bg">
+                <span class="bar b1"></span>
+                <span class="bar b2"></span>
+                <span class="bar b3"></span>
+
+                <span class="bar b4"></span>
+            </div>
+        </div>
+
+
         <div class="app__core-header" clip-overflow>
-            <img class="app__core-image" src="img/bg1.jpg">
+            <i class="app__core-image"></i>
         </div>
         <div class="app__user-userimg">
             <span class="app__user-imgbox" clip-overflow>
@@ -45,7 +57,7 @@
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
 
-                    <div class="app__core-largebutton blue"> Read More </div>
+                    <div class="app__content-articlebutton blue" id="articleHover"> Read More </div>
                 </div>
 
             </div>
@@ -114,9 +126,33 @@
 
                     <div class="app__core-largebutton blue"> Read More </div>
                 </div>
+            </div>
 
+
+
+        </div>
+        <div class="app__navscreen-container">
+            <div class="app__navscreen-navlisting">
+                <ul class="app__navscreen-navcontainer">
+                    <li class="app__navscreen-navelem">
+                        <a class="app__navscreen-navlink" target="_blank" href="#">Home</a>
+                    </li>
+                    <span class="app__navscreen-divider"></span>
+                    <li class="app__navscreen-navelem">
+                        <a class="app__navscreen-navlink" target="_blank" href="#">Archive</a>
+                    </li>
+                    <span class="app__navscreen-divider"></span>
+                    <li class="app__navscreen-navelem">
+                        <a class="app__navscreen-navlink" target="_blank" href="#">Profile</a>
+                    </li>
+                    <span class="app__navscreen-divider"></span>
+                    <li class="app__navscreen-navelem">
+                        <a class="app__navscreen-navlink" target="_blank" href="#">Settings</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+    <script src="js/app.js"></script>
 </body>
 </html>

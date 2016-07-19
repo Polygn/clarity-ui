@@ -1,0 +1,141 @@
+.app__nav-container
+    position: fixed
+    top: 0
+    left: 0
+    width: 100px
+    height: 100px
+
+    &.z-index-shift
+        z-index: 999
+
+.app__nav-bg
+    width: 60px
+    height: 60px
+    background: #607D8B
+    border-radius: 9em
+    position: relative
+    float: left
+    top: 18px
+    left: 18px
+    transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
+    @include BoxShadow(1)
+
+    &:hover
+        cursor: pointer
+        @include BoxShadow(3)
+    
+    &:active
+        @include BoxShadow(2)
+
+    &.open
+        background: rgb(179, 191, 197)
+
+
+    .bar
+        display: block
+        width: 25px
+        height: 3px
+        background: #fff
+        position: relative
+        left: 17px
+        border-radius: 1.5px
+        transition: all .30s ease-in-out
+        -webkit-transition: all .30s ease-in-out
+
+        &.b1
+            top: 17px
+    
+        &.b2
+            top: 25px
+            left: 12px
+            width: 35px
+    
+        &.b3
+            top: 33px
+
+        &.b4
+            width: 0px
+            height: 0px
+            opacity: 0
+
+
+        &.open.b1
+            width: 26px
+            top: 28px
+            transform: rotate(45deg)
+
+        &.open.b2
+            opacity: 0
+
+        &.open.b3
+            width: 26px
+            top: 23px
+            transform: rotate(-45deg)
+
+        &.open.b4
+            width: 40px
+            height: 40px
+            background: none
+            border: 2px solid #fff
+            border-radius: 9em
+            left: 8px
+            top: -1px
+            opacity: 1
+
+
+.app__navscreen-container
+    width: 100%
+    height: 100%
+    background: rgba(96, 125, 139, 0.06)
+    position: fixed
+    top: -100%
+    transition: all .55s ease-in-out
+    -webkit-transition: all .55s ease-in-out
+
+.app__navscreen-container.open
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.7)
+    position: fixed
+    top: 0
+
+.app__navscreen-navlisting
+    margin: 0 auto
+    width: 35%
+    position: relative
+    top: 250px
+
+
+.app__navscreen-navcontainer
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+
+.app__navscreen-navelem
+    text-align: center
+    padding: 10px
+
+.app__navscreen-navlink
+    color: #fff
+    font-size: 27pt
+    font-weight: 400
+    font-family: "Roboto", sans-serif
+    display: block
+    text-decoration: none
+    transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
+    border-top-left-radius: 1.5px
+    border-top-right-radius: 1.5px
+    
+    &:hover
+        background: rgba(255, 255, 255, 0.29)
+
+
+.app__navscreen-divider
+    display: block
+    width: 60%
+    background: #eee
+    height: 1px
+    margin: 0 auto

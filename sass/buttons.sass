@@ -17,4 +17,27 @@
 
     &:active
         @include BoxShadow(2)
-        @include BGColor(#BBDEFB)
+        @include BGColor(#455A64)
+        color: #fff
+
+
+.app__content-articlebutton
+    width: 360px
+    height: 45px
+    text-align: center
+    line-height: 2.5
+    color: #000
+    margin: 0 auto
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+    cursor: pointer
+    -webkit-user-select: none
+    transition: width .25s ease-in-out, box-shadow .25s ease-in-out, background-color .25s ease-in-out, color .25s ease-in-out
+    -webkit-transition: width .25s ease-in-out, box-shadow .25s ease-in-out, background-color .25s ease-in-out, color .25s ease-in-out
+
+    &:hover
+        width: 200px
+
+    &:active
+        @include BoxShadow(2)
+        @include BGColor(#455A64)
+        color: #fff
