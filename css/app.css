@@ -104,6 +104,9 @@ html, body {
 
 .app__content-postcontent {
   padding: 30px; }
+  .app__content-postcontent p {
+    margin: 20px;
+    line-height: 1.5; }
 
 .app__content-postheader {
   width: 100%;
@@ -211,18 +214,18 @@ html, body {
     .app__nav-bg .bar.b3 {
       top: 33px; }
     .app__nav-bg .bar.b4 {
-      width: 0px;
-      height: 0px;
-      opacity: 0; }
+      width: 40px;
+      height: 40px;
+      transform: scale(0); }
     .app__nav-bg .bar.open.b1 {
       width: 26px;
       top: 28px;
       transform: rotate(45deg); }
     .app__nav-bg .bar.open.b2 {
-      opacity: 0; }
+      width: 0; }
     .app__nav-bg .bar.open.b3 {
       width: 26px;
-      top: 23px;
+      top: 22px;
       transform: rotate(-45deg); }
     .app__nav-bg .bar.open.b4 {
       width: 40px;
@@ -232,7 +235,7 @@ html, body {
       border-radius: 9em;
       left: 8px;
       top: -1px;
-      opacity: 1; }
+      transform: scale(1); }
 
 .app__navscreen-container {
   width: 100%;
