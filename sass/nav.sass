@@ -11,7 +11,7 @@
 .app__nav-bg
     width: 60px
     height: 60px
-    background: #607D8B
+    background: #fff
     border-radius: 9em
     position: relative
     float: left
@@ -29,14 +29,14 @@
         @include BoxShadow(2)
 
     &.open
-        background: rgb(179, 191, 197)
+        background: #e6e6e6
 
 
     .bar
         display: block
         width: 25px
         height: 3px
-        background: #fff
+        background: #404040
         position: relative
         left: 17px
         border-radius: 1.5px
@@ -99,6 +99,7 @@
     background: rgba(0, 0, 0, 0.7)
     position: fixed
     top: 0
+    z-index: 9
 
 .app__navscreen-navlisting
     margin: 0 auto

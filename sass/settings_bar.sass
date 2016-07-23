@@ -1,0 +1,75 @@
+.app__user-settingsbox
+    width: 50px
+    height: 50px
+    float: right
+    position: absolute
+    top: 300px
+    right: 30px
+    cursor: pointer
+
+.box
+    display: block
+    width: 8px
+    height: 8px
+    background: #fff
+    position: relative
+    float: left
+    left: 2px
+    top: 25px
+    border-radius: 1.4px
+    transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
+    margin: 0 4px
+    transform: scale(1)
+
+    &.active
+        transform: scale(0.7)
+
+
+
+.app__user-settingspane
+    transform: scale(0)
+    width: 150px
+    background: #fff
+    position: absolute
+    top: 350px
+    right: 25px
+    border-radius: 1.4px
+    transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
+    transform-origin: 85% 0%
+
+    &.settings-open
+        transform: scale(1)
+
+
+
+
+.app__user-settingslist
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+
+.app__user-settingselem
+    text-align: center
+
+
+.app__user-settingsbutton
+    display: block
+    padding: 20px
+    text-decoration: none
+    transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
+    color: #000
+
+    &:active
+        background: #607D8B
+        color: #fff
+        @include BoxShadow(1)
+
+.app__user-settingsbutton.warning
+    color: #fff
+
+    &:active
+        @include BGColor(#ca1855)

@@ -1,6 +1,9 @@
 =BGColor($color)
     background: $color
 
+=RGBAColor($r, $g, $b, $a)
+    background: rgba($r, $g, $b, $a)
+
 =Border($width, $display-type, $color, $border-type)
     display: $display-type
     border: $width $color $border-type
@@ -32,3 +35,6 @@
 
 [clip-overflow]
     overflow: hidden
+
+.warning
+    @include BGColor(#E91E63)

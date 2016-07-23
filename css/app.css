@@ -6,6 +6,9 @@ html, body {
 [clip-overflow] {
   overflow: hidden; }
 
+.warning {
+  background: #E91E63; }
+
 .app-container {
   width: 100%; }
 
@@ -179,7 +182,7 @@ html, body {
 .app__nav-bg {
   width: 60px;
   height: 60px;
-  background: #607D8B;
+  background: #fff;
   border-radius: 9em;
   position: relative;
   float: left;
@@ -194,12 +197,12 @@ html, body {
   .app__nav-bg:active {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .app__nav-bg.open {
-    background: #b3bfc5; }
+    background: #e6e6e6; }
   .app__nav-bg .bar {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: #404040;
     position: relative;
     left: 17px;
     border-radius: 1.5px;
@@ -251,7 +254,8 @@ html, body {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 9; }
 
 .app__navscreen-navlisting {
   margin: 0 auto;
@@ -289,5 +293,94 @@ html, body {
   background: #eee;
   height: 1px;
   margin: 0 auto; }
+
+.app__user-settingsbox {
+  width: 50px;
+  height: 50px;
+  float: right;
+  position: absolute;
+  top: 300px;
+  right: 30px;
+  cursor: pointer; }
+
+.box {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  position: relative;
+  float: left;
+  left: 2px;
+  top: 25px;
+  border-radius: 1.4px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  margin: 0 4px;
+  transform: scale(1); }
+  .box.active {
+    transform: scale(0.7); }
+
+.app__user-settingspane {
+  transform: scale(0);
+  width: 150px;
+  background: #fff;
+  position: absolute;
+  top: 350px;
+  right: 25px;
+  border-radius: 1.4px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transform-origin: 85% 0%; }
+  .app__user-settingspane.settings-open {
+    transform: scale(1); }
+
+.app__user-settingslist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.app__user-settingselem {
+  text-align: center; }
+
+.app__user-settingsbutton {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  color: #000; }
+  .app__user-settingsbutton:active {
+    background: #607D8B;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.app__user-settingsbutton.warning {
+  color: #fff; }
+  .app__user-settingsbutton.warning:active {
+    background: #ca1855; }
+
+.app__core-footercontainer {
+  width: 100%;
+  height: 250px;
+  background: #fff;
+  position: fixed;
+  bottom: -250px;
+  float: left;
+  transition: bottom 0.45s ease;
+  -webkit-transition: bottom 0.45s ease; }
+  .app__core-footercontainer.at--bottom {
+    bottom: 0; }
+
+.app__core-footerelems {
+  display: block;
+  position: absolute;
+  bottom: 0; }
+  .app__core-footerelems .author, .app__core-footerelems .version, .app__core-footerelems .product {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 11pt;
+    float: left;
+    margin: 12px;
+    color: #444; }
 
 /*# sourceMappingURL=app.css.map */
